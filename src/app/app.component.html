@@ -1,10 +1,10 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <div id="reactiveForm">
     <form [formGroup]="submitForm" (ngSubmit)="onSubmit()">
-        <h2>Form Validation</h2>
+        <h2>FORM VALIDATION<hr></h2>
         <br>
         <span id="errorFirstName">{{errName}}</span>
-        <input id=inputFirstname type="text" formControlName="user" placeholder="Firstname">
+        <input id=inputFirstname type="text" formControlName="user" placeholder="FIRST NAME">
         <br> <br>
         <span id="errorGender">{{errGender}}</span>
         <div id="gender">
@@ -17,20 +17,20 @@
         </div>
         <br>
         <span id="errorCountry">{{errCountry}}</span>
-        <input type="text" list="country" placeholder="Country" formControlName="country" onfocus="this.value=''" onchange="this.blur();" [(ngModel)]="selectedCountry" (change)="countryChanged()" >
+        <input type="text" list="country" placeholder="COUNTRY" formControlName="country" onfocus="this.value=''" onchange="this.blur();" [(ngModel)]="selectedCountry" (change)="countryChanged()" >
         <datalist id="country" >
             <option *ngFor="let country of countries"  value={{country}}></option>
         </datalist>
         <br> <br>
         <span id="errorCity">{{errCity}}</span>
-        <input type="text" list="city" placeholder="City" formControlName="city" onfocus="this.value=''" onchange="this.blur();">
+        <input type="text" list="city" placeholder="CITY" formControlName="city" onfocus="this.value=''" onchange="this.blur();">
         <datalist id="city">
             <option *ngFor="let city of cities"  value={{city}}></option>
         </datalist>
         <br> <br>
         <span id="errorAge">{{errAge}}</span>
-        <input type="text" id="inputAge" type="text" formControlName="age" placeholder="Age">
+        <input type="text" id="inputAge" type="text" formControlName="age" placeholder="AGE">
         <!-- <br> <br> -->
-        <button type="submit">Form Submit</button>
+        <button type="submit">SUBMIT</button>
     </form>
 </div>
