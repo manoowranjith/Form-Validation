@@ -1,0 +1,49 @@
+h2
+{
+    padding:5vh 0;
+    font-weight: 800;
+}
+#reactiveForm{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 247, 200);
+}
+form{
+    background-image: linear-gradient(to left,rgb(190, 247, 163),rgb(188, 159, 255));
+    /* color:white; */
+    /* border:1px solid black; */
+    padding:5vh 10vh;
+    border-radius: 20px;
+    /* background-color: rgba(255, 255, 255, 0.13); */
+}
+#gender{
+    display: flex;
+    justify-content: space-around;
+}
+input[type=text]{
+    width: 100%;
+    border-radius: 5px;
+}
+input[type=checkbox]
+{
+    margin-right:10px;
+}
+span{
+    height: 15px;
+    display: block;
+    font-size: 12px;
+    color: red;
+}
+button{
+    display: block;
+    margin:0 auto;
+    background-color: rgb(2, 2, 2);
+    color: white;
+    border:none;
+    padding:10px 20px;
+    font-weight: 600;
+    margin-top:5vh;
+}
